@@ -10,7 +10,7 @@ twisted:
     - 20.*
     - 21.*
     - 22.*
-zope.interface:
+zopeinterface:
     - 4.6.*
     - 4.7.*
     - 5.0.*

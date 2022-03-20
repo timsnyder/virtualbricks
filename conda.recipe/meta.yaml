@@ -32,7 +32,7 @@ requirements:
     - pillow
     - pygraphviz
     - twisted  {{ twisted }}
-    - zope.interface {{ zope.interface }}
+    - zope.interface {{ zopeinterface }}
     - pygobject
 
 test:
