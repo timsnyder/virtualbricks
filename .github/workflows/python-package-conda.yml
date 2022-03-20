@@ -26,11 +26,11 @@ jobs:
     - name: Install dependencies and test
       run: |
         echo $PATH
-        conda config --add channels conda-forge
+        conda config --set channels conda-forge
         conda config --set channel_priority strict
+        conda update -y conda
         conda info
-        conda install -y mamba
-        mamba create -y --name testenv python=${{matrix.python_version}} pillow pygraphviz twisted=${{ matrix.twisted_version }} zope.interface pygobject python-subunit
+        conda create -y --name testenv python=${{matrix.python_version}} pillow pygraphviz twisted=${{ matrix.twisted_version }} zope.interface pygobject python-subunit
         conda activate testenv
         pip install subunitreporter
     #- name: Lint with flake8
