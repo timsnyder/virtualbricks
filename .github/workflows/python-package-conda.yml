@@ -26,7 +26,8 @@ jobs:
     - name: Install dependencies and test
       run: |
         echo $PATH
-        conda config --set channels conda-forge
+        conda config --add channels conda-forge
+        conda config --remove channels defaults
         conda config --set channel_priority strict
         conda update -y conda
         conda info
