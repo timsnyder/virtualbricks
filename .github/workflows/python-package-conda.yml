@@ -1,0 +1,51 @@
+name: Python Package using Conda
+
+on: 
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build-linux:
+    name: Python ${{ matrix.python_version }}, Twisted ${{ matrix.twisted_version }}
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 5
+      matrix:
+         python_version: ['3.5', '3.6', '3.7', '3.8', '3.9', '3.10']
+         twisted_version: ['19', '20', '21', '22']
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.10
+    - name: Add conda to system path
+      run: |
+        # $CONDA is an environment variable pointing to the root of the miniconda directory
+        echo $CONDA/bin >> $GITHUB_PATH
+    - name: Install dependencies
+      run: |
+        conda info
+        conda install -y --name base pillow pygraphvis twisted zope.interface pygobject python-subunit
+        pip install subunitreporter
+    #- name: Lint with flake8
+    #  run: |
+    #    conda install flake8
+    #    # stop the build if there are Python syntax errors or undefined names
+    #    flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+    #    # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+    #    flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    - name: Test with twisted.trial
+      run: |
+        trial --reporter=subunitv2 virtualbricks | subunit2junitxml > twisted_junit.xml
+    - name: Test Report
+      uses: dorny/test-reporter@v1
+      if: success() || failure()    # run this step even if previous step failed
+      with:
+        name: Twisted Tests            # Name of the check run which will be created
+        path: twisted_junit.xml    # Path to test results
+        reporter: java-junit        # Format of test results
