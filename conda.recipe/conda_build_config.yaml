@@ -1,0 +1,26 @@
+channel_targets:
+    - tsnyder main
+
+
+# define a set of twisted versions to test against
+# started from what was relased in mid-2019 because danielinux
+# said he had it working in November 2019
+twisted:
+    - 19.*
+    - 20.*
+    - 21.*
+    - 22.*
+zope.interface:
+    - 4.6.*
+    - 4.7.*
+    - 5.0.*
+    - 5.1.*
+    - 5.2.*
+    - 5.3.*
+    - 5.4.*
+pygraphviz:
+    - 1.5.*
+    - 1.6.*
+    - 1.7.*
+    # 1.8 was yanked from pypi
+    - 1.9.*
