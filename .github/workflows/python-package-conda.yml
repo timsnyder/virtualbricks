@@ -15,8 +15,8 @@ jobs:
     strategy:
       max-parallel: 5
       matrix:
-         python_version: ['3.5', '3.6', '3.7', '3.8', '3.9', '3.10']
-         twisted_version: ['19', '20', '21', '22']
+         python_version: ['3.5'] #, '3.6', '3.7', '3.8', '3.9', '3.10']
+         twisted_version: ['19'] #, '20', '21', '22']
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python ${{ matrix.python_version }}
@@ -29,6 +29,8 @@ jobs:
         echo $CONDA/bin >> $GITHUB_PATH
     - name: Install dependencies
       run: |
+        conda config --add channels conda-forge
+        conda config --set channel_priority strict
         conda info
         conda install -y --name base pillow pygraphvis twisted=${{ matrix.twisted_version }} zope.interface pygobject python-subunit
         pip install subunitreporter
