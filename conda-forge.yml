@@ -1,0 +1,18 @@
+# reusing CI infrastructure from conda-forge
+# see https://conda-forge.org/docs/user/ci-skeleton.html
+# registered dev.azure.com project with my fork of the gh repo
+# by following https://docs.microsoft.com/en-us/azure/devops/boards/github/connect-to-github
+
+clone_depth: 0
+recipe_dir: conda.recipe
+skip_render:
+  - README.md
+  - LICENSE.txt
+  - .gitattributes
+  - .gitignore
+  - build-locally.py
+  - LICENSE
+  - .github/CONTRIBUTING.md
+  - .github/ISSUE_TEMPLATE.md
+  - .github/PULL_REQUEST_TEMPLATE.md
+  - .github/workflows

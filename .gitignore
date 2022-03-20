@@ -19,3 +19,5 @@ virtualbricks.egg-info/
 tags
 *.pyc
 __pycache__/
+*.pyc
+build_artifacts/
