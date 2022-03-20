@@ -10,7 +10,8 @@ source:
   git_url: {{ environ.get('FEEDSTOCK_ROOT', '..') }}
 
 build:
-  noarch: python
+  #noarch: python
+  skip: True  # [win|osx]
   number: {{ build_number }}
   string: {{ [build_number, ('h' + PKG_HASH), environ.get('GIT_DESCRIBE_HASH', '')]|join('_') }}
   # If the installation is complex, or different between Unix and Windows, use separate bld.bat and build.sh files instead of this key.

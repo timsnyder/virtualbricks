@@ -24,3 +24,26 @@ pygraphviz:
     - 1.7.*
     # 1.8 was yanked from pypi
     - 1.9.*
+python:
+    - 3.6.* *_cpython
+    - 3.7.* *_cpython
+    - 3.8.* *_cpython
+    - 3.9.* *_cpython
+    - 3.10.* *_cpython
+# since the upstream conda-forge-pinning-feedstock
+# uses python in zip-keys with numpy and python_impl
+# we have to make sure that the lengths of those keys
+# also match (and that 3.5 and 3.6 are set to an existing version
+numpy:
+    - 1.16
+    - 1.19
+    - 1.19
+    - 1.19
+    - 1.19
+
+python_impl:
+    - cpython
+    - cpython
+    - cpython
+    - cpython
+    - cpython
