@@ -32,7 +32,7 @@ jobs:
         conda config --add channels conda-forge
         conda config --set channel_priority strict
         conda info
-        conda install -y --name base pillow pygraphvis twisted=${{ matrix.twisted_version }} zope.interface pygobject python-subunit
+        conda install -y --name base pillow pygraphviz twisted=${{ matrix.twisted_version }} zope.interface pygobject python-subunit
         pip install subunitreporter
     #- name: Lint with flake8
     #  run: |
