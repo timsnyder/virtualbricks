@@ -19,20 +19,19 @@ jobs:
          twisted_version: ['19'] #, '20', '21', '22']
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python ${{ matrix.python_version }}
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{ matrix.python_version }}
     - name: Add conda to system path
       run: |
         # $CONDA is an environment variable pointing to the root of the miniconda directory
         echo $CONDA/bin >> $GITHUB_PATH
-    - name: Install dependencies
+    - name: Install dependencies and test
       run: |
+        echo $PATH
         conda config --add channels conda-forge
         conda config --set channel_priority strict
         conda info
-        conda install -y --name base pillow pygraphviz twisted=${{ matrix.twisted_version }} zope.interface pygobject python-subunit
+        conda install -y mamba
+        mamba create -y --name testenv python=${{matrix.python_version}} pillow pygraphviz twisted=${{ matrix.twisted_version }} zope.interface pygobject python-subunit
+        conda activate testenv
         pip install subunitreporter
     #- name: Lint with flake8
     #  run: |
@@ -43,6 +42,7 @@ jobs:
     #    flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with twisted.trial
       run: |
+        echo $PATH
         trial --reporter=subunitv2 virtualbricks | subunit2junitxml > twisted_junit.xml
     - name: Test Report
       uses: dorny/test-reporter@v1
