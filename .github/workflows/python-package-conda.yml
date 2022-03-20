@@ -31,7 +31,7 @@ jobs:
         conda config --set channel_priority strict
         conda update -y conda
         conda info
-        conda create -y --name testenv python=${{matrix.python_version}} pillow pygraphviz twisted=${{ matrix.twisted_version }} zope.interface pygobject python-subunit
+        conda create -y --name testenv python=${{matrix.python_version}} pillow=3.3 pygraphviz=1.4rc1 twisted=${{ matrix.twisted_version }} zope.interface=4.5 pygobject=3.25 python-subunit
         conda activate testenv
         pip install subunitreporter
     #- name: Lint with flake8
