@@ -8,10 +8,567 @@ jobs:
     vmImage: ubuntu-latest
   strategy:
     matrix:
-      linux_64_:
-        CONFIG: linux_64_
+      linux_64_python3.10.____cpythontwisted19._zopeinterface4.6._:
+        CONFIG: linux_64_python3.10.____cpythontwisted19._zopeinterface4.6._
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted19._zopeinterface4.7._:
+        CONFIG: linux_64_python3.10.____cpythontwisted19._zopeinterface4.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted19._zopeinterface5.0._:
+        CONFIG: linux_64_python3.10.____cpythontwisted19._zopeinterface5.0._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted19._zopeinterface5.1._:
+        CONFIG: linux_64_python3.10.____cpythontwisted19._zopeinterface5.1._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted19._zopeinterface5.2._:
+        CONFIG: linux_64_python3.10.____cpythontwisted19._zopeinterface5.2._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted19._zopeinterface5.3._:
+        CONFIG: linux_64_python3.10.____cpythontwisted19._zopeinterface5.3._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted19._zopeinterface5.4._:
+        CONFIG: linux_64_python3.10.____cpythontwisted19._zopeinterface5.4._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted20._zopeinterface4.6._:
+        CONFIG: linux_64_python3.10.____cpythontwisted20._zopeinterface4.6._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted20._zopeinterface4.7._:
+        CONFIG: linux_64_python3.10.____cpythontwisted20._zopeinterface4.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted20._zopeinterface5.0._:
+        CONFIG: linux_64_python3.10.____cpythontwisted20._zopeinterface5.0._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted20._zopeinterface5.1._:
+        CONFIG: linux_64_python3.10.____cpythontwisted20._zopeinterface5.1._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted20._zopeinterface5.2._:
+        CONFIG: linux_64_python3.10.____cpythontwisted20._zopeinterface5.2._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted20._zopeinterface5.3._:
+        CONFIG: linux_64_python3.10.____cpythontwisted20._zopeinterface5.3._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted20._zopeinterface5.4._:
+        CONFIG: linux_64_python3.10.____cpythontwisted20._zopeinterface5.4._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted21._zopeinterface4.6._:
+        CONFIG: linux_64_python3.10.____cpythontwisted21._zopeinterface4.6._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted21._zopeinterface4.7._:
+        CONFIG: linux_64_python3.10.____cpythontwisted21._zopeinterface4.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted21._zopeinterface5.0._:
+        CONFIG: linux_64_python3.10.____cpythontwisted21._zopeinterface5.0._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted21._zopeinterface5.1._:
+        CONFIG: linux_64_python3.10.____cpythontwisted21._zopeinterface5.1._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted21._zopeinterface5.2._:
+        CONFIG: linux_64_python3.10.____cpythontwisted21._zopeinterface5.2._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted21._zopeinterface5.3._:
+        CONFIG: linux_64_python3.10.____cpythontwisted21._zopeinterface5.3._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted21._zopeinterface5.4._:
+        CONFIG: linux_64_python3.10.____cpythontwisted21._zopeinterface5.4._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted22._zopeinterface4.6._:
+        CONFIG: linux_64_python3.10.____cpythontwisted22._zopeinterface4.6._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted22._zopeinterface4.7._:
+        CONFIG: linux_64_python3.10.____cpythontwisted22._zopeinterface4.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted22._zopeinterface5.0._:
+        CONFIG: linux_64_python3.10.____cpythontwisted22._zopeinterface5.0._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted22._zopeinterface5.1._:
+        CONFIG: linux_64_python3.10.____cpythontwisted22._zopeinterface5.1._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted22._zopeinterface5.2._:
+        CONFIG: linux_64_python3.10.____cpythontwisted22._zopeinterface5.2._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted22._zopeinterface5.3._:
+        CONFIG: linux_64_python3.10.____cpythontwisted22._zopeinterface5.3._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythontwisted22._zopeinterface5.4._:
+        CONFIG: linux_64_python3.10.____cpythontwisted22._zopeinterface5.4._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted19._zopeinterface4.6._:
+        CONFIG: linux_64_python3.6.____cpythontwisted19._zopeinterface4.6._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted19._zopeinterface4.7._:
+        CONFIG: linux_64_python3.6.____cpythontwisted19._zopeinterface4.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted19._zopeinterface5.0._:
+        CONFIG: linux_64_python3.6.____cpythontwisted19._zopeinterface5.0._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted19._zopeinterface5.1._:
+        CONFIG: linux_64_python3.6.____cpythontwisted19._zopeinterface5.1._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted19._zopeinterface5.2._:
+        CONFIG: linux_64_python3.6.____cpythontwisted19._zopeinterface5.2._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted19._zopeinterface5.3._:
+        CONFIG: linux_64_python3.6.____cpythontwisted19._zopeinterface5.3._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted19._zopeinterface5.4._:
+        CONFIG: linux_64_python3.6.____cpythontwisted19._zopeinterface5.4._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted20._zopeinterface4.6._:
+        CONFIG: linux_64_python3.6.____cpythontwisted20._zopeinterface4.6._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted20._zopeinterface4.7._:
+        CONFIG: linux_64_python3.6.____cpythontwisted20._zopeinterface4.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted20._zopeinterface5.0._:
+        CONFIG: linux_64_python3.6.____cpythontwisted20._zopeinterface5.0._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted20._zopeinterface5.1._:
+        CONFIG: linux_64_python3.6.____cpythontwisted20._zopeinterface5.1._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted20._zopeinterface5.2._:
+        CONFIG: linux_64_python3.6.____cpythontwisted20._zopeinterface5.2._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted20._zopeinterface5.3._:
+        CONFIG: linux_64_python3.6.____cpythontwisted20._zopeinterface5.3._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted20._zopeinterface5.4._:
+        CONFIG: linux_64_python3.6.____cpythontwisted20._zopeinterface5.4._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted21._zopeinterface4.6._:
+        CONFIG: linux_64_python3.6.____cpythontwisted21._zopeinterface4.6._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted21._zopeinterface4.7._:
+        CONFIG: linux_64_python3.6.____cpythontwisted21._zopeinterface4.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted21._zopeinterface5.0._:
+        CONFIG: linux_64_python3.6.____cpythontwisted21._zopeinterface5.0._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted21._zopeinterface5.1._:
+        CONFIG: linux_64_python3.6.____cpythontwisted21._zopeinterface5.1._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted21._zopeinterface5.2._:
+        CONFIG: linux_64_python3.6.____cpythontwisted21._zopeinterface5.2._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted21._zopeinterface5.3._:
+        CONFIG: linux_64_python3.6.____cpythontwisted21._zopeinterface5.3._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted21._zopeinterface5.4._:
+        CONFIG: linux_64_python3.6.____cpythontwisted21._zopeinterface5.4._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted22._zopeinterface4.6._:
+        CONFIG: linux_64_python3.6.____cpythontwisted22._zopeinterface4.6._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted22._zopeinterface4.7._:
+        CONFIG: linux_64_python3.6.____cpythontwisted22._zopeinterface4.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted22._zopeinterface5.0._:
+        CONFIG: linux_64_python3.6.____cpythontwisted22._zopeinterface5.0._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted22._zopeinterface5.1._:
+        CONFIG: linux_64_python3.6.____cpythontwisted22._zopeinterface5.1._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted22._zopeinterface5.2._:
+        CONFIG: linux_64_python3.6.____cpythontwisted22._zopeinterface5.2._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted22._zopeinterface5.3._:
+        CONFIG: linux_64_python3.6.____cpythontwisted22._zopeinterface5.3._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.6.____cpythontwisted22._zopeinterface5.4._:
+        CONFIG: linux_64_python3.6.____cpythontwisted22._zopeinterface5.4._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted19._zopeinterface4.6._:
+        CONFIG: linux_64_python3.7.____cpythontwisted19._zopeinterface4.6._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted19._zopeinterface4.7._:
+        CONFIG: linux_64_python3.7.____cpythontwisted19._zopeinterface4.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted19._zopeinterface5.0._:
+        CONFIG: linux_64_python3.7.____cpythontwisted19._zopeinterface5.0._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted19._zopeinterface5.1._:
+        CONFIG: linux_64_python3.7.____cpythontwisted19._zopeinterface5.1._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted19._zopeinterface5.2._:
+        CONFIG: linux_64_python3.7.____cpythontwisted19._zopeinterface5.2._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted19._zopeinterface5.3._:
+        CONFIG: linux_64_python3.7.____cpythontwisted19._zopeinterface5.3._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted19._zopeinterface5.4._:
+        CONFIG: linux_64_python3.7.____cpythontwisted19._zopeinterface5.4._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted20._zopeinterface4.6._:
+        CONFIG: linux_64_python3.7.____cpythontwisted20._zopeinterface4.6._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted20._zopeinterface4.7._:
+        CONFIG: linux_64_python3.7.____cpythontwisted20._zopeinterface4.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted20._zopeinterface5.0._:
+        CONFIG: linux_64_python3.7.____cpythontwisted20._zopeinterface5.0._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted20._zopeinterface5.1._:
+        CONFIG: linux_64_python3.7.____cpythontwisted20._zopeinterface5.1._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted20._zopeinterface5.2._:
+        CONFIG: linux_64_python3.7.____cpythontwisted20._zopeinterface5.2._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted20._zopeinterface5.3._:
+        CONFIG: linux_64_python3.7.____cpythontwisted20._zopeinterface5.3._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted20._zopeinterface5.4._:
+        CONFIG: linux_64_python3.7.____cpythontwisted20._zopeinterface5.4._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted21._zopeinterface4.6._:
+        CONFIG: linux_64_python3.7.____cpythontwisted21._zopeinterface4.6._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted21._zopeinterface4.7._:
+        CONFIG: linux_64_python3.7.____cpythontwisted21._zopeinterface4.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted21._zopeinterface5.0._:
+        CONFIG: linux_64_python3.7.____cpythontwisted21._zopeinterface5.0._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted21._zopeinterface5.1._:
+        CONFIG: linux_64_python3.7.____cpythontwisted21._zopeinterface5.1._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted21._zopeinterface5.2._:
+        CONFIG: linux_64_python3.7.____cpythontwisted21._zopeinterface5.2._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted21._zopeinterface5.3._:
+        CONFIG: linux_64_python3.7.____cpythontwisted21._zopeinterface5.3._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted21._zopeinterface5.4._:
+        CONFIG: linux_64_python3.7.____cpythontwisted21._zopeinterface5.4._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted22._zopeinterface4.6._:
+        CONFIG: linux_64_python3.7.____cpythontwisted22._zopeinterface4.6._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted22._zopeinterface4.7._:
+        CONFIG: linux_64_python3.7.____cpythontwisted22._zopeinterface4.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted22._zopeinterface5.0._:
+        CONFIG: linux_64_python3.7.____cpythontwisted22._zopeinterface5.0._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted22._zopeinterface5.1._:
+        CONFIG: linux_64_python3.7.____cpythontwisted22._zopeinterface5.1._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted22._zopeinterface5.2._:
+        CONFIG: linux_64_python3.7.____cpythontwisted22._zopeinterface5.2._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted22._zopeinterface5.3._:
+        CONFIG: linux_64_python3.7.____cpythontwisted22._zopeinterface5.3._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythontwisted22._zopeinterface5.4._:
+        CONFIG: linux_64_python3.7.____cpythontwisted22._zopeinterface5.4._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted19._zopeinterface4.6._:
+        CONFIG: linux_64_python3.8.____cpythontwisted19._zopeinterface4.6._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted19._zopeinterface4.7._:
+        CONFIG: linux_64_python3.8.____cpythontwisted19._zopeinterface4.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted19._zopeinterface5.0._:
+        CONFIG: linux_64_python3.8.____cpythontwisted19._zopeinterface5.0._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted19._zopeinterface5.1._:
+        CONFIG: linux_64_python3.8.____cpythontwisted19._zopeinterface5.1._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted19._zopeinterface5.2._:
+        CONFIG: linux_64_python3.8.____cpythontwisted19._zopeinterface5.2._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted19._zopeinterface5.3._:
+        CONFIG: linux_64_python3.8.____cpythontwisted19._zopeinterface5.3._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted19._zopeinterface5.4._:
+        CONFIG: linux_64_python3.8.____cpythontwisted19._zopeinterface5.4._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted20._zopeinterface4.6._:
+        CONFIG: linux_64_python3.8.____cpythontwisted20._zopeinterface4.6._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted20._zopeinterface4.7._:
+        CONFIG: linux_64_python3.8.____cpythontwisted20._zopeinterface4.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted20._zopeinterface5.0._:
+        CONFIG: linux_64_python3.8.____cpythontwisted20._zopeinterface5.0._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted20._zopeinterface5.1._:
+        CONFIG: linux_64_python3.8.____cpythontwisted20._zopeinterface5.1._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted20._zopeinterface5.2._:
+        CONFIG: linux_64_python3.8.____cpythontwisted20._zopeinterface5.2._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted20._zopeinterface5.3._:
+        CONFIG: linux_64_python3.8.____cpythontwisted20._zopeinterface5.3._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted20._zopeinterface5.4._:
+        CONFIG: linux_64_python3.8.____cpythontwisted20._zopeinterface5.4._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted21._zopeinterface4.6._:
+        CONFIG: linux_64_python3.8.____cpythontwisted21._zopeinterface4.6._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted21._zopeinterface4.7._:
+        CONFIG: linux_64_python3.8.____cpythontwisted21._zopeinterface4.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted21._zopeinterface5.0._:
+        CONFIG: linux_64_python3.8.____cpythontwisted21._zopeinterface5.0._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted21._zopeinterface5.1._:
+        CONFIG: linux_64_python3.8.____cpythontwisted21._zopeinterface5.1._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted21._zopeinterface5.2._:
+        CONFIG: linux_64_python3.8.____cpythontwisted21._zopeinterface5.2._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted21._zopeinterface5.3._:
+        CONFIG: linux_64_python3.8.____cpythontwisted21._zopeinterface5.3._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted21._zopeinterface5.4._:
+        CONFIG: linux_64_python3.8.____cpythontwisted21._zopeinterface5.4._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted22._zopeinterface4.6._:
+        CONFIG: linux_64_python3.8.____cpythontwisted22._zopeinterface4.6._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted22._zopeinterface4.7._:
+        CONFIG: linux_64_python3.8.____cpythontwisted22._zopeinterface4.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted22._zopeinterface5.0._:
+        CONFIG: linux_64_python3.8.____cpythontwisted22._zopeinterface5.0._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted22._zopeinterface5.1._:
+        CONFIG: linux_64_python3.8.____cpythontwisted22._zopeinterface5.1._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted22._zopeinterface5.2._:
+        CONFIG: linux_64_python3.8.____cpythontwisted22._zopeinterface5.2._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted22._zopeinterface5.3._:
+        CONFIG: linux_64_python3.8.____cpythontwisted22._zopeinterface5.3._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythontwisted22._zopeinterface5.4._:
+        CONFIG: linux_64_python3.8.____cpythontwisted22._zopeinterface5.4._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted19._zopeinterface4.6._:
+        CONFIG: linux_64_python3.9.____cpythontwisted19._zopeinterface4.6._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted19._zopeinterface4.7._:
+        CONFIG: linux_64_python3.9.____cpythontwisted19._zopeinterface4.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted19._zopeinterface5.0._:
+        CONFIG: linux_64_python3.9.____cpythontwisted19._zopeinterface5.0._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted19._zopeinterface5.1._:
+        CONFIG: linux_64_python3.9.____cpythontwisted19._zopeinterface5.1._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted19._zopeinterface5.2._:
+        CONFIG: linux_64_python3.9.____cpythontwisted19._zopeinterface5.2._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted19._zopeinterface5.3._:
+        CONFIG: linux_64_python3.9.____cpythontwisted19._zopeinterface5.3._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted19._zopeinterface5.4._:
+        CONFIG: linux_64_python3.9.____cpythontwisted19._zopeinterface5.4._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted20._zopeinterface4.6._:
+        CONFIG: linux_64_python3.9.____cpythontwisted20._zopeinterface4.6._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted20._zopeinterface4.7._:
+        CONFIG: linux_64_python3.9.____cpythontwisted20._zopeinterface4.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted20._zopeinterface5.0._:
+        CONFIG: linux_64_python3.9.____cpythontwisted20._zopeinterface5.0._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted20._zopeinterface5.1._:
+        CONFIG: linux_64_python3.9.____cpythontwisted20._zopeinterface5.1._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted20._zopeinterface5.2._:
+        CONFIG: linux_64_python3.9.____cpythontwisted20._zopeinterface5.2._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted20._zopeinterface5.3._:
+        CONFIG: linux_64_python3.9.____cpythontwisted20._zopeinterface5.3._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted20._zopeinterface5.4._:
+        CONFIG: linux_64_python3.9.____cpythontwisted20._zopeinterface5.4._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted21._zopeinterface4.6._:
+        CONFIG: linux_64_python3.9.____cpythontwisted21._zopeinterface4.6._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted21._zopeinterface4.7._:
+        CONFIG: linux_64_python3.9.____cpythontwisted21._zopeinterface4.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted21._zopeinterface5.0._:
+        CONFIG: linux_64_python3.9.____cpythontwisted21._zopeinterface5.0._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted21._zopeinterface5.1._:
+        CONFIG: linux_64_python3.9.____cpythontwisted21._zopeinterface5.1._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted21._zopeinterface5.2._:
+        CONFIG: linux_64_python3.9.____cpythontwisted21._zopeinterface5.2._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted21._zopeinterface5.3._:
+        CONFIG: linux_64_python3.9.____cpythontwisted21._zopeinterface5.3._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted21._zopeinterface5.4._:
+        CONFIG: linux_64_python3.9.____cpythontwisted21._zopeinterface5.4._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted22._zopeinterface4.6._:
+        CONFIG: linux_64_python3.9.____cpythontwisted22._zopeinterface4.6._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted22._zopeinterface4.7._:
+        CONFIG: linux_64_python3.9.____cpythontwisted22._zopeinterface4.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted22._zopeinterface5.0._:
+        CONFIG: linux_64_python3.9.____cpythontwisted22._zopeinterface5.0._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted22._zopeinterface5.1._:
+        CONFIG: linux_64_python3.9.____cpythontwisted22._zopeinterface5.1._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted22._zopeinterface5.2._:
+        CONFIG: linux_64_python3.9.____cpythontwisted22._zopeinterface5.2._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted22._zopeinterface5.3._:
+        CONFIG: linux_64_python3.9.____cpythontwisted22._zopeinterface5.3._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythontwisted22._zopeinterface5.4._:
+        CONFIG: linux_64_python3.9.____cpythontwisted22._zopeinterface5.4._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+    maxParallel: 50
   timeoutInMinutes: 360
 
   steps:
