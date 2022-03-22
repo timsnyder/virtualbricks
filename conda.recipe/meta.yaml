@@ -47,9 +47,9 @@ test:
     - pip
   commands:
     - pip check || true
-    - virtualbricks --version
+    - xvfb-run -s "-screen 0 1200x800x24" virtualbricks --version
     # use the twisted.trial testrunner to run the embedded tests
-    - trial virtualbricks
+    - xvfb-run -s "-screen 0 1200x800x24" trial virtualbricks
 
 about:
   home: https://github.com/virtualsquare/virtualbricks
