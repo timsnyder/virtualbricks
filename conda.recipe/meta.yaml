@@ -53,7 +53,6 @@ about:
   home: https://github.com/virtualsquare/virtualbricks
   license: GPL-2.0-only
   license_family: GPL
-  license_file: LICENSE
   summary: 'Frontend for Qemu Virtual Machines (VMs) and VDE virtualized network devices'
   description: |
     Virtualbricks is a frontend for the management of Qemu Virtual Machines (VMs) and VDE
